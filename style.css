@@ -1,11 +1,57 @@
-body{
-    background-image: url(img/Pin\ on\ Islamische\ bilder.jpeg);
+body {
+    overflow: hidden;
+    margin: 0; /* Menghilangkan margin agar konten penuh */
+    padding: 0; /* Menghilangkan padding agar konten penuh */
+    background-color: white;
+}
+
+.container {
+    background-image: url('img/Pin on Islamische bilder.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+    position: relative;
+    border-radius: 15px;
+    padding: 10px;
 }
-.h1{
-    font-family: "Kavoon", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
 
+.isi {
+    padding: 50px 15px; /* Padding atas dan samping */
+}
+
+h1 {
+    font-family: "Kavoon", serif;
+    font-size: 40px;
+    font-style: normal;
+    color: white; /* Warna teks putih */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    color: white; /* Mengubah warna teks menjadi putih */
+    font-family: "Kavoon", serif;
+    font-size: 12px;
+}
+
+h3 {
+    font-family: "karla",sans-serif;
+    font-size: 16px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+    font-family: "Kavoon", serif;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 12px;
+    text-align: center; /* Mengatur teks menjadi rata tengah */
+    padding-bottom: 25px;
+    color: rgba(255, 255, 255, 0.623);
+}
