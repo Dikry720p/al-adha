@@ -1,0 +1,11 @@
+body{
+    background-image: url(img/Pin\ on\ Islamische\ bilder.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.h1{
+    font-family: "Kavoon", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
