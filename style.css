@@ -14,7 +14,6 @@ body {
     justify-content: center; 
     text-align: center;
     position: relative;
-    border-radius: 15px;
     padding: 10px;
 }
 
@@ -65,3 +64,11 @@ h3 {
     padding-bottom: 25px;
     color: rgba(255, 255, 255, 0.623);
 }
+
+#muteButton {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+  }
+  
