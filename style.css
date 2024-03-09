@@ -1,6 +1,6 @@
 body {
-    margin: 0; /* Menghilangkan margin agar konten penuh */
-    padding: 0; /* Menghilangkan padding agar konten penuh */
+    margin: 0; 
+    padding: 0; 
     background-color: white;
 }
 
@@ -18,7 +18,7 @@ body {
 }
 
 .isi {
-    padding: 50px 15px; /* Padding atas dan samping */
+    padding: 50px 15px;
 }
 
 @keyframes fadeIn {
@@ -28,18 +28,19 @@ body {
     to {
         opacity: 1;
     }
+    
 }
 h1 {
     font-family: "Kavoon", serif;
     font-size: 40px;
     font-style: normal;
-    color: white; /* Warna teks putih */
+    color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     animation: fadeIn 2s ease-in;
 }
 
 p {
-    color: white; /* Mengubah warna teks menjadi putih */
+    color: white;
     font-family: "Kavoon", serif;
     font-size: 12px;
     animation: fadeIn 2s ease-in ;
@@ -60,7 +61,7 @@ h3 {
     left: 0;
     right: 0;
     font-size: 12px;
-    text-align: center; /* Mengatur teks menjadi rata tengah */
+    text-align: center;
     padding-bottom: 25px;
     color: rgba(255, 255, 255, 0.623);
 }
@@ -71,4 +72,9 @@ h3 {
     right: 20px;
     z-index: 1;
   }
+
+i {
+    color: rgba(240, 248, 255, 0.685);
+    font-size: 14px;
+}
   

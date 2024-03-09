@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kavoon&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -19,12 +20,31 @@
             <h3>2024 M / 1445 H</h3>
             <a class="footer" href="https://www.instagram.com/bucket_.man?igsh=OGQ5ZDc2ODk2ZA==">@bucket_.man</a>
         </div>
-        <audio id="myAudio" loop>
+        <audio id="myAudio" loop autoplay>
             <source src="bgsound/bgsound.mp3" type="audio/mpeg">
         </audio>
-        <button onclick="toggleSound()" id="muteButton">Mute</button>
-        <script src="script.js">
+        <button style="background-color: rgba(0, 255, 255, 0); border: none;" onclick="toggleSound()" id="muteButton" aria-label="Toggle Sound"></button>
 
+        <script>
+            var audio = document.getElementById("myAudio");
+            var muteButton = document.getElementById("muteButton");
+
+            // Otomatis memulai audio saat halaman dimuat
+            window.onload = function() {
+                audio.play();
+                muteButton.innerHTML = `<i class="fas fa-volume-up"></i>`;
+            }
+            // Fungsi untuk mengatur suara
+            function toggleSound() {
+                if (audio.paused) {
+                    audio.play();
+                    muteButton.innerHTML = `<i class="fas fa-volume-up" style= background: none; ></i>`;
+                } else {
+                    audio.pause();
+                    muteButton.innerHTML = `<i class="fas fa-volume-off" style= background: none; ></i>`;
+                }
+            }
+;
         </script>
     </div>
 </body>
