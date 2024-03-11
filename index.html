@@ -28,24 +28,32 @@
         <script>
             var audio = document.getElementById("myAudio");
             var muteButton = document.getElementById("muteButton");
-
-            // Otomatis memulai audio saat halaman dimuat
-            window.onload = function() {
-                audio.play();
-                muteButton.innerHTML = `<i class="fas fa-volume-up"></i>`;
-            }
-            // Fungsi untuk mengatur suara
+            
             function toggleSound() {
                 if (audio.paused) {
                     audio.play();
-                    muteButton.innerHTML = `<i class="fas fa-volume-up" style= background: none; ></i>`;
+                    muteButton.innerHTML = '<i class="fas fa-volume-up"></i>';
                 } else {
                     audio.pause();
-                    muteButton.innerHTML = `<i class="fas fa-volume-off" style= background: none; ></i>`;
+                    muteButton.innerHTML = '<i class="fas fa-volume-off"></i>';
                 }
             }
-;
+            document.addEventListener("DOMContentLoaded", function() {
+                toggleSound();
+            });
+
+            function startShakeAnimation() {
+            muteButton.style.animation = "shake 0.5s";
+            setTimeout(function() {
+                muteButton.style.animation = "none"; 
+            }, 500);
+        }
+        setInterval(startShakeAnimation, 4000);
         </script>
+        
+        
+        
+        
     </div>
 </body>
 </html>
